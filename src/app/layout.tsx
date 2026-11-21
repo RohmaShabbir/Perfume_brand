@@ -8,6 +8,8 @@ import { site } from "@/lib/site";
 import CartDrawer from "@/components/CartDrawer";
 import QuickView from "@/components/QuickView";
 import Footer from "@/components/Footer";
+import CustomCursor from "@/components/CustomCursor";
+import Assistant from "@/components/Assistant";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -31,9 +33,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <SmoothScroll>
           <Preloader />
+          <CustomCursor />
           <Navbar />
           <CartDrawer />
           <QuickView />
+          <Assistant />
           {children}
           <Footer/>
         </SmoothScroll>

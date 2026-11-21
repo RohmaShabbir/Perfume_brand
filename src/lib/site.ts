@@ -14,4 +14,6 @@ export const site = {
   freeShippingFrom: 15000,
   stockLeft: 120,
   stockTotal: 500,
+  email: "hello@maison.com",
+  city: "Karachi, Pakistan",
 };
